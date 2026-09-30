@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <defs>
+    <filter id="wash" x="-40%" y="-40%" width="180%" height="180%">
+      <feTurbulence type="fractalNoise" baseFrequency=".014" numOctaves="3" seed="8" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="95"/>
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <radialGradient id="sage"><stop stop-color="#b5bfa8" stop-opacity=".35"/><stop offset=".7" stop-color="#cbd1bf" stop-opacity=".18"/><stop offset="1" stop-color="#e7e9df" stop-opacity="0"/></radialGradient>
+  </defs>
+  <g filter="url(#wash)">
+    <ellipse cx="65" cy="80" rx="380" ry="360" fill="url(#sage)"/>
+    <ellipse cx="1300" cy="750" rx="330" ry="320" fill="url(#sage)"/>
+    <path d="M-70 230Q100 150 145 250T100 600L-70 730Z" fill="#c4ccb8" opacity=".1"/>
+    <path d="M1260-100Q1190 60 1380 150L1500 180V-100Z" fill="#bbc6b0" opacity=".12"/>
+  </g>
+</svg>
